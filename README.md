@@ -46,3 +46,29 @@ Pod Network - provides CNI plugin (container network interface), it is big and f
 
 
 ![](images/k8s_Networking.png)
+
+
+
+Service object (in yaml file, like load balancer in aws) is the Stable Network abstraction for all the pods. 
+Kubernetes gaurentes Name and IP of Service object until its life time. 
+
+Service has End point object which stores all the entires of the service to match its selector: 
+![](images/k8s_servicesArcht.png)
+
+Different types of Service:
+ 1) ClusterIP - Default 
+ 2) NodePort - gets cluster wide port accessable from outside of cluster
+    - ![](images/k8s_service_nodeport1.png)
+    - ![](images/k8s_service_nodeport2.png)
+ 3) LoadBalancer
+
+
+Kube-proxy
+its the process which runs on every Node. Its job is to writes IPTABLES or IPVS rules. 
+- 2 types: IPTABLES Mode and IPVS Mode
+
+
+
+
+
+
