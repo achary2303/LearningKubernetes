@@ -23,7 +23,6 @@ K8s -> Contorl plane and Workers
   4) Storage API
 
 
-eg: kubectl get apiservices
 
 ***************************************
 ## Kubernetes Objects:
