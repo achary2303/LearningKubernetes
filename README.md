@@ -1,4 +1,4 @@
-Kubernetes:
+#Kubernetes:
 
 K8s - stands for kubernetes. 8 is no of letters between k and s.
 
@@ -6,17 +6,17 @@ K8s - open source platform to run cloud native apps
 
 K8s -> Contorl plane and Workers
 
-Contorl plane:
-  api server, scheduler, controlers, etcd
-  etcd - Stateful cluster in control plane
-  api server server: all operations goes through api server
+###Contorl plane:
+  - api server, scheduler, controlers, etcd
+  - etcd - Stateful cluster in control plane
+  - api server server: all operations goes through api server
 
-API:
-  Everything in K8s is registered in API.
-  its RESTfull API with CRUD operations (Create, Read, Update and Delete)
-  Run commands using "kubectl"
+###API:
+  - Everything in K8s is registered in API.
+  - its RESTfull API with CRUD operations (Create, Read, Update and Delete)
+  - Run commands using "kubectl"
 
-API Groups:
+###API Groups:
   1) Core API
   2) Apps API
   3) Authorization API
@@ -26,7 +26,7 @@ API Groups:
 eg: kubectl get apiservices
 
 ***************************************
-Kubernetes Objects:
+##Kubernetes Objects:
 
 K8s doesnt run a container directly.
 it wraps in "POD" - smallest thing to deploy in K8s
@@ -36,7 +36,7 @@ Pods wraps one or more containers
 kubectl get nodes
 
 ***************************************
-Kubernetes Networking:
+##Kubernetes Networking:
 
 Rules: All nodes can talk, All pods can communicate with eachother and Every pods gets its own IP
 
